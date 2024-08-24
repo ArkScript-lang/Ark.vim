@@ -47,13 +47,15 @@ No bugs currently.
 =======================================================================
 Section 5: Contributing								  *ArkContributing*
 
-Fork the repository (https://github.com/Wafelack/Ark.vim).
+Fork the repository (https://github.com/ArkScript-lang/Ark.vim).
 Clone it on your computer.
 Add your features / fix the bugs you want to fix.
 Make a pull request on the repository.
 
 =======================================================================
 Section 6:	Changelog                                     *ArkChangelog* 
+
+0.2.0 : Update highlighted keywords, builtins and operators
 
 0.1.1 : Allow users to change the mapping to run the file in the current
 buffer
@@ -65,4 +67,4 @@ comments and keywords
 Section 7: Credits										   *ArkCredits*
 
 Author : Wafelack <wafelack@protonmail.com>
-Contributors : ["Jake Grossman <jake.r.grossman@gmail.com>"]
+Contributors : ["Jake Grossman <jake.r.grossman@gmail.com>", "Alexandre Plateau <lexplt.dev@gmail.com>"]

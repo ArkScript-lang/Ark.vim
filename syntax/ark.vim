@@ -3,32 +3,30 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syntax keyword arkKeyword set let mut 
-syntax keyword arkKeyword fun while begin if
-syntax keyword arkKeyword import quote del
+syntax keyword arkKeyword let mut set fun if while begin import del
 
 " Buildtins
 	" IO
 	syntax keyword arkFunction print puts input
 	syntax keyword arkFunction io:writeFile io:readFile
-	syntax keyword arkFunction io:fileExists? io:listFiles io:isDirectory io:makeDir io:removeFiles io:dir?
+	syntax keyword arkFunction io:fileExists? io:listFiles io:makeDir io:removeFiles io:dir?
 
 	" List
-	syntax keyword arkFunction list:reverse list:find list:removeAt list:slice
+	syntax keyword arkFunction list:reverse list:find list:slice
 	syntax keyword arkFunction list:sort list:fill list:setAt
 
 	" Mathematics
 	syntax keyword arkFunction math:exp math:ln math:ceil math:floor math:round math:NaN? math:Inf?
-	syntax keyword arkFunction isinf_ 
 	syntax keyword arkFunction math:cos math:sin math:tan math:arccos math:arcsin math:arctan
+	syntax keyword arkFunction math:cosh math:sinh math:tanh math:acosh math:asinh math:atanh
 
 	syntax keyword arkConstant math:pi math:e math:tau math:Inf math:NaN
 
 	" String
-	syntax keyword arkFunction str:format str:find str:removeAt
+	syntax keyword arkFunction str:format str:find str:removeAt str:ord str:chr
 
 	" System
-	syntax keyword arkFunction sys:exec sys:sleep
+	syntax keyword arkFunction sys:exec sys:sleep sys:exit
 
 	" Time
 	syntax keyword arkFunction time
@@ -47,9 +45,9 @@ syntax match arkOperator "\v\<" " <
 syntax match arkOperator "\v\>" " >
 syntax match arkOperator "\v\<\=" " <=
 syntax match arkOperator "\v\>\=" " >=
-syntax match arkOperator "\v\^" " ^
 syntax match arkOperator "\v!\=" " !=
-syntax keyword arkOperator len empty? firstOf tailOf headOf
+syntax keyword arkOperator len empty? head tail
+syntax keyword arkOperator list append concat pop append! concat! pop!
 syntax keyword arkOperator nil? assert toNumber toString and or mod type hasField not
 
 " Numbers
