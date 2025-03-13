@@ -1,6 +1,6 @@
 if while begin fun let import set mut del # keyword
 
-len empty? firstOf tailOf headOf nil? assert toNumber toString and or mod type hasField # operator
+len empty? head tail nil? assert toNumber toString and or mod type hasField # operator
 "quoted" # string quoted double
 12345 # constant numeric
 true false nil # constants language
@@ -10,7 +10,7 @@ list:reverse list:find list:slice list:sort list:fill list:setAt # list builtins
 print puts input io:writeFile io:readFile io:fileExists? io:listFiles io:dir? io:makeDir io:removeFiles # io builtins
 time # time builtins
 sys:exec sys:sleep # sys builtins
-str:format str:find str:removeAt # str builtins
+string:format string:find string:removeAt # str builtins
 math:exp math:ln math:ceil math:floor math:round math:NaN? math:Inf? math:pi math:e math:tau math:Inf math:NaN math:cos math:sin math:tan math:arccos math:arcsin math:arctan # math builtins
 
 throw return try # Exception std
