@@ -58,7 +58,7 @@ syntax match arkOperator "\v/" " /
 syntax match arkOperator "\v\+" " +
 syntax match arkOperator "\v-" " -
 syntax match arkOperator "\v\@" " @
-syntax match arkOperator "\v\@"= " @=
+syntax match arkOperator "\v\@\=" " @=
 syntax match arkOperator "\v\@\@" " @@
 syntax match arkOperator "\v\@\@=" " @@=
 syntax match arkOperator "\v\<" " <
